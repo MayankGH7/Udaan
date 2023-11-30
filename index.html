@@ -1,0 +1,252 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial scale=1.0">
+  <title>UDAAN</title>
+  <link rel="shortcut icon" type="x-icon" href="images\PNG\imp png logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cd4198be70.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script>
+    function toggle1() {
+      let p = document.getElementById('toggle1')
+      if (p.style.display == 'none') {
+        p.style.display = 'block';
+      }
+      else {
+        p.style.display = "none";
+      }
+    }
+    function toggle2() {
+      let p = document.getElementById('toggle2')
+      if (p.style.display == 'none') {
+        p.style.display = 'block';
+      }
+      else {
+        p.style.display = "none";
+      }
+    }
+    function slider() {
+      p = document.getElementById('n1')
+      q = document.getElementById('n2')
+      r = document.getElementById('n3')
+      s = document.getElementById('n4')
+      if (p.style.display == 'block') {
+        p.style.display = 'none';
+        q.style.display = 'block';
+      }
+      else if (q.style.display == 'block') {
+        q.style.display = 'none';
+        r.style.display = 'block';
+      }
+      else if (r.style.display == 'block') {
+        r.style.display = 'none';
+        s.style.display = 'block';
+      }
+      else {
+        s.style.display = 'none';
+        p.style.display = 'block';
+      }
+    }
+    function sliderback() {
+      p = document.getElementById('n4')
+      q = document.getElementById('n3')
+      r = document.getElementById('n2')
+      s = document.getElementById('n1')
+      if (p.style.display == 'block') {
+        p.style.display = 'none';
+        q.style.display = 'block';
+      }
+      else if (q.style.display == 'block') {
+        q.style.display = 'none';
+        r.style.display = 'block';
+      }
+      else if (r.style.display == 'block') {
+        r.style.display = 'none';
+        s.style.display = 'block';
+      }
+      else {
+        s.style.display = 'none';
+        p.style.display = 'block';
+      }
+    }
+  </script>
+  <header>
+    <div class="headers">
+      <img class="logo1" src="images\PNG\imp png logo.png" alt="LOGO UDAAN SOCIETY" />
+      <img class="logo2" src="images\PNG\college logo png.png" alt="LOGO HANSRAJ COLLEGE" />
+      <div class="top">
+        <h1 class="heading">UDAAN</h1>
+        <p Class="subhd">The Motivational Society</p>
+        <p Class="subhd2"> Hansraj College,University Of Delhi</p>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </header>
+  <nav class="navbar">
+    <ul class="navitems">
+      <li class=main><a href="../index.html" style="text-decoration: none; color: white;">Home</a></li>
+      <li class=main onclick="toggle1()">About Us <i id=icon class="fa-solid fa-caret-down"></i>
+      </li>
+      <li class=main>event & activities</li>
+      <li class=main onclick="toggle2()">Special Corner <i id=icon class="fa-solid fa-caret-down"></i>
+      </li>
+      <li class=main>Join Us</li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <div class="pics">
+        <ul id="toggle1" class="t1" style="display:none; position:absolute;">
+          <li class="item">History</li>
+          <li class="item">Vision</li>
+          <li class="item">Team</li>
+          <li class="item">Wings</li>
+        </ul>
+        <ul id="toggle2" class="t2" style="display:none;position:absolute;">
+          <li class="item">Spotlight</li>
+          <li class="item">
+            <nobr>Monday Motivation</nobr>
+          </li>
+          <li class="item">Inspirational Tales</li>
+        </ul>
+        <!-- <video autoplay loop muted plays-inline >
+                    <source src="images/Untitled_design.mp4" type="video/mp4">
+                </video> -->
+        <div class="midhd">
+          <h1 Class="soc_name"><b>UDAAN</b></h1>
+          <p Class="soc_desc">The Motivational Society</p>
+          <p Class="soc_desc0">Hansraj College,University Of Delhi</p>
+        </div>
+      </div>
+      <!-- 
+                    NEWS NEWS NEWS NEWS
+                    NEWS NEWS NEWS NEWS
+                    NEWS NEWS NEWS NEWS
+                    NEWS NEWS NEWS NEWS
+                    NEWS NEWS NEWS NEWS
+                    NEWS NEWS NEWS NEWS
+                 -->
+      <div class="news">
+        <div class="icons"><i class="fa-solid fa-bullhorn"></i></div>
+        <p id=n1 style="display: block;">news</p>
+        <p id=n2 style="display: none;">news1 </p>
+        <p id=n3 style="display: none;">news2 </p>
+        <p id=n4 style="display: none;">news3 </p>
+        <div class="icons" style="cursor:pointer;"><i onclick="sliderback()"
+            class="fa-solid fa-circle-chevron-left"></i>
+          <i onclick="slider()" class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+    </section>
+    <!-- 
+                    NEWS NEWS NEWS NEWS
+                    NEWS NEWS NEWS NEWS
+                    NEWS NEWS NEWS NEWS
+                    NEWS NEWS NEWS NEWS
+                    NEWS NEWS NEWS NEWS
+                    NEWS NEWS NEWS NEWS
+                 -->
+    <article class="cards">
+      <div class="card">
+        <h2 class="head"><b>ABOUT UDAAN</b></h2>
+        <p class="desc">UDAAN is one of the registered societies of <br>Hansraj College,
+          University of Delhi. It fosters an <br>uplifting and supportive environment,
+          inspiring <br>individuals to reach their full potential.
+          It <br>promotes positive attitudes, encourages personal <br>growth, and
+          celebrates achievements, creating a <br>collective drive for success and well-being.</p>
+      </div>
+      <div class="grad">
+        <div class="card2">
+          <h2 class="head">PAST EVENTS</h2>
+          <p class="desc">UDAAN, which is dedicated to inspiring the<br> public, has made a name for itself through the
+            <br>planning of a variety of popular events since its<br> establishment. Here is a glimpse of some of its
+            <br>previous, notable endeavours:
+          </p>
+        </div>
+      </div>
+      <div class="card3">
+        <h2 class="head1">RECENT ACTIVITIES</h2>
+      </div>
+    </article>
+    <aside>
+      <img class="design" src="images\hosla.png" />
+      <img class="design2" src="images\IMG_4430.jpg" />
+      <img class="design3" src="images/design3(1).jpg" />
+      <img class="design4" src="images/SAVE_20221123_151742(1).jpg" />
+      <img class="design5" src="images/IMG_4175.jpg" />
+      <img class="design6" src="images/IMG20230224153538.jpg" />
+      <img class="design7" src="images/IMG_4904.jpg" />
+      <img class="design8" src="images/IMG20230224141825.jpg" />
+      <img class="design9" src="images/recent_act1.png" />
+      <img class="design10" src="images/recent_act2.png" />
+      <img class="design11" src="images/recent_act3.png" />
+      <!-- <div class="shader">
+                    <h1 Class="soc_name"><b>UDAAN</b></h1>
+                    <p Class="soc_desc">The Motivational Society</p>
+                    <p Class="soc_desc0">Hansraj College,University Of Delhi</p>
+                </div> -->
+    </aside>
+  </main>
+  <footer>
+    <div class="base">
+      <ul type="none">
+        <li class="headft">
+          <nobr>CONTACT US!</nobr>
+        </li>
+        <li class="contact"><i class="fa-solid fa-square-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="tel:+919354188355" style="color: #fff;" target="_blank">9354188355</a>
+        </li>
+        <li class="contact"><i class="fa-solid fa-square-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="tel:+918005597447" style="color: #fff;" target="_blank">8005597447</a>
+        </li>
+        <li class="contact">
+          <nobr><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href=mailto:udaanhrc01@gmail.com
+              style="color: #fff;" target="_blank">udaanhrc01@gmail.com</a></nobr>
+        </li>
+      </ul>
+      <ul type="none">
+        <li class="headft">
+          <nobr>FOLLOW US!</nobr>
+        </li>
+        <li class="smedia">
+          <nobr>&nbsp;&nbsp;<a href="https://www.instagram.com/udaan_hansraj_college/" target="_blank"><i
+                class="fa-brands fa-instagram" style="color: #fff;">
+              </i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a
+              href="https://www.linkedin.com/in/udaan-the-motivational-society-957ba8285/" style="color: #fff;"
+              target="_blank"><i class="fa-brands fa-linkedin"></i></a></nobr>
+        </li>
+      </ul>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.311122310771!2d77.20520273111583!3d28.680338419113433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd909bc94e77%3A0xd89c815b718f526!2sHansraj%20College%2C%20Delhi%2C%20110007!5e0!3m2!1sen!2sin!4v1700239331848!5m2!1sen!2sin"
+        width="600" height="450" class="map" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="bottom">Address -Hans Raj College, Mahatma Hans Raj Marg, Malkaganj, Delhi 110007, India </p>
+    <div class="bottom1">
+      <ul type="none">
+        <li>
+          <nobr>Logo Designed by -<a href="https://www.behance.net/prachichaudhary2" style="color: rgb(56, 56, 56);"
+              target="_blank">Prachi Chaudhary</a></nobr>
+        </li>
+        <li class="right">
+          <nobr>Website Designed By - <a href="https://www.linkedin.com/in/palak-chauhan-b63065227/"
+              style="color: rgb(56, 56, 56);" target="_blank">Palak Chauhan</a></nobr>
+        </li>
+      </ul>
+      <ul type=none>
+        <li class="developers">
+          <nobr>Website Developed By -<a href="https://www.linkedin.com/in/joydeep-hans-65870928a/"
+              style="color: rgb(56, 56, 56);" target="_blank">Joydeep Hans</a>
+          </nobr>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
